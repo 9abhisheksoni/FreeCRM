@@ -17,6 +17,7 @@ public class TestUtil extends TestBase {
 	public static long Page_Load_Timeout = 20;
 	public static long Implicit_Wait = 20;
 
+	
 	public void switchToFrame(String frm) {
 		driver.switchTo().frame(frm);
 	}
@@ -25,6 +26,7 @@ public class TestUtil extends TestBase {
 	static Workbook book;
 	static Sheet sht;
 
+	//Method to get data from excel
 	public static Object[][] getData(String sheet) throws InvalidFormatException {
 		FileInputStream file = null;
 
